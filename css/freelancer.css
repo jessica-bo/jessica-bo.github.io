@@ -11,19 +11,21 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #5ef7fb;
   --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
+  --purple: #9b64a0;
+  --deep-purple: #542966;
+  --pink: #fe8eff;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #28a745;
+  --green: #5efba0;
   --white: #fcfbfd;
   --cyan: #17a2b8;
   --teal: #117692;
   --gray: #6c757d;
   --gray-dark: #343a40;
+  --black: #000000;
   --primary: #fcfbfd;
   --secondary: #4f2b5a;
   --success: #28a745;
@@ -60,14 +62,51 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #212529;
+  color: black;
   text-align: left;
-  background-color: #117692;
+  background-color: white;
 }
+
+#backgroundimage {
+  background-image: url('../img/mountains.png');
+  width: 100vw;
+  height: 60vh; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 3rem;
+} 
+
+.typewriter h1 {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  border-right: .08em solid black; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2s steps(30, end),
+    blink-caret .8s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -84,9 +123,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+.highlight { background-color:#FFFF00; }
+
 p {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 abbr[title],
@@ -169,7 +211,7 @@ a {
 }
 
 a:hover {
-  color: #117964;
+  color: pink;
   text-decoration: underline;
 }
 
@@ -191,7 +233,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1em;
 }
 
@@ -373,13 +415,14 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
   line-height: 1.2;
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
 h2, .h2 {
@@ -451,9 +494,51 @@ large,
 }
 
 mark,
-.mark {
-  padding: 0.2em;
-  background-color: #fcf8e3;
+.markpink {
+  padding: 0.1em;
+  background-color: #f8b3f9;
+}
+
+mark,
+.markpink:hover {
+  padding: 0.1em;
+  background-color: #fe8eff;
+}
+
+mark,
+.markgreen {
+  padding: 0.1em;
+  background-color: #88ffba;
+}
+
+mark,
+.markgreen:hover {
+  padding: 0.1em;
+  background-color: #5efba0;
+}
+
+mark,
+.markblue {
+  padding: 0.1em;
+  background-color: #8cfcff;
+}
+
+mark,
+.markblue:hover {
+  padding: 0.1em;
+  background-color: #60f3f6;
+}
+
+mark,
+.markpurple {
+  padding: 0.1em;
+  background-color: #e1a0ff;
+}
+
+mark,
+.markpurple:hover {
+  padding: 0.1em;
+  background-color: #d579ff;
 }
 
 .list-unstyled {
@@ -565,8 +650,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;}
 
@@ -642,6 +727,12 @@ pre code {
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
 }
 
 .col-1 {
@@ -2223,18 +2314,18 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: white;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: transparent;
-  border: 0.125rem solid transparent;
-  padding: 0.375rem 0.75rem;
+  background-color: black;
+  /*border: 0.125rem solid transparent;*/
+  padding: 0.375rem 0.5rem;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1;
   border-radius: 0.5rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2246,7 +2337,7 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: #212529;
+  color: pink;
   text-decoration: none;
 }
 
@@ -2729,14 +2820,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #542966;
-  border-color: #9b64a0;
+  color: deep-purple;
+  border-color: purple;
 }
 
 .btn-outline-light:hover {
-  color: #542966;
-  background-color: #f0e9f1;
-  border-color: #9b64a0;
+  color: black;
+  background-color: pink;
+  border-color: black;
 }
 
 .btn-outline-light:focus, .btn-outline-light.focus {
@@ -3981,13 +4072,21 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand {
-  display: inline-block;
+  display: block;
   padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-bottom: 0rem;
   margin-right: 1rem;
   font-size: 1.5rem;
   line-height: inherit;
   white-space: nowrap;
+}
+
+.navbar-sub {
+  display: block;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-right: 1rem;
+  font-size: 1rem;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -5669,7 +5768,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Courier New", Courier, monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5782,7 +5881,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Courier New", Courier, monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6215,17 +6314,18 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #fcfbfd !important;
+  background-image: url("img/jessicabo_pic.png");
+  background-color: white !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #f0e9f1 !important;
+  background-color: white !important;
 }
 
 .bg-secondary {
-  background-color: #4f2b5a !important;
+  background-color: black !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -9370,7 +9470,11 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #117692 !important;
+  color:  white !important;
+}
+
+.text-black {
+  color:  black !important;
 }
 
 .text-primary {
@@ -9623,9 +9727,9 @@ a.text-dark:hover, a.text-dark:focus {
 .btn-social {
   border-radius: 100%;
   display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -9647,32 +9751,40 @@ a.text-dark:hover, a.text-dark:focus {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
 }
 
 #mainNav .navbar-brand {
-  color: #55b7ce;
+  color: white;
+}
+
+#mainNav .navbar-brand:hover {
+  color: pink;
+}
+
+#mainNav .navbar-sub {
+  color: white;
 }
 
 #mainNav .navbar-nav {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fcfbfd;
+  color: white;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #55b7ce;
+  color: pink;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fcfbfd;
+  color: white;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #fcfbfd;
+  color: white;
 }
 
 #mainNav .navbar-toggler {
@@ -9682,9 +9794,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: padding-top 0.2s, padding-bottom 0.2s;
   }
   #mainNav .r-brand {
     font-size: 1.75em;
@@ -9694,37 +9806,41 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #117692;
-    background: #fcfbfd;
+    color: pink;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #117692;
-    background: #fcfbfd;
+    color: pink;
   }
   #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1 em;
   }
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .masthead .masthead-heading {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 3.25rem;
   font-weight: 500;
+}
+
+.masthead .masthead-name {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-weight: 600;
 }
 
 .masthead .masthead-subheading {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #9b64a0;
+  color: purple;
 }
 
 .masthead .masthead-ending {
@@ -9738,8 +9854,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .masthead .masthead-heading {
     font-size: 4.5rem;
