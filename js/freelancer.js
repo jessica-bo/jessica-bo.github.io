@@ -61,6 +61,11 @@
     });
   });
 
+  $(document).ready(function(){
+        $("#popup").modal('show');
+        $('.modal-backdrop').remove();
+    });
+
   // below listed default settings
   // AOS.init({
   //   // Global settings:

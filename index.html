@@ -65,20 +65,41 @@
   <!-- Background -->
   <div id="backgroundimage"></div>
 
-  <header class="masthead text-left">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-auto typewriter ml-lg-5 mb-lg-5 mt-lg-4">
-          <h1 class="masthead-name"> > Hi, I'm Jessica!</h1>
+  <!-- Modal-->
+<!--   <div class="popup">
+    <div class="modal fade" id="popup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Hang on!</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" data-backdrop="false">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>The mobile site is still under construction for formatting. In the meantime, 
+            please use the desktop site for a better experience :)</p>
+          </div>
         </div>
       </div>
-      <div id="trigger-zoom">
+    </div>
+  </div> -->
+
+  <header class="masthead text-left">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 ml-lg-4">
+          <img src="img/jessica5.jpg" class="rounded-circle img-thumbnail">
+        </div>
+        <div class="col-md-auto typewriter ml-lg-5">
+            <h1 class="masthead-name mt-lg-3">Hi, I'm Jessica!</h1>
+        </div>
+      </div>
+      <div id="trigger-zoom" class="mb-lg-5">
       </div>
     </div>
 
     <div  class="container">
       <div class="row mt-lg-2">
-        <div class="col-md-auto ml-lg-5"  data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-anchor="#trigger-zoom" data-aos-once="false" data-aos-duration=700>
+        <div class="col-md-3 ml-lg-4"  data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-anchor="#trigger-zoom" data-aos-once="false" data-aos-duration=700>
           <div>
             <h1> <mark class="markpink">
               <a class="text-black js-scroll-trigger" href="#projects">Engineer</a></mark> 
@@ -100,7 +121,7 @@
         </div>
         <div class="col-7 bg-secondary text-white ml-lg-5" data-aos="flip-right" data-aos-anchor-placement="top-center" data-aos-anchor="#trigger-zoom" data-aos-once="false" data-aos-duration=700>
           <p class="mt-4 ml-2 mr-2"> Mechanical designer with a software edge. </p>
-          <p class="mt-2 ml-2 mr-2"> I’m interested in the design and research of interactions between humans and intelligent systems. I look for impactful opportunities to leverage technology translation between research and business, such as in robotics and biomedical engineering. </p>
+          <p class="mt-2 ml-2 mr-2"> I’m interested in the design and research of interactions between people, the natural world, and intelligent systems. I look for impactful opportunities to leverage technology translation between research and the real-world, with a focus on improving safety and the standard of living for vulnerable populations. </p>
           <div class="large mb-2 text-center">
             <a class="ml-3 mr-3" href="documents/JessicaBo_Resume.pdf" target="_blank">
               > Industry Resume
@@ -128,7 +149,7 @@
           </div>
         </div>
       </div>
-      <div id="education" style="margin-top:200px">
+      <div id="education" style="margin-top:100px">
       </div>
     </div>
   </header>
@@ -165,7 +186,7 @@
         <div class="col-md-auto">
           <h4 class="mt-2">University of British Columbia | 2014-2020</h4>
           <h6 class="text-grey">Vancouver, Canada</h6>
-          <p>BASc Mechanical Engineering, Specialization in Biomedical Engineering </p>
+          <p>BASc Mechanical Engineering with Distinction, Specialization in Biomedical Engineering </p>
         </div>
       </div>
       <div id="projects" class="mb-lg-5">
@@ -178,83 +199,38 @@
     <div class="container">
       <div class="row">
         <div class="col mt-lg-5 mb-lg-3">
-
           <h1>Portfolio</h1>
-
-          <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon">
-              <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-lg-2">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
             </div>
-            <div class="divider-custom-line"></div>
+            <img class="img-fluid" src="img/portfolio-icons/amazon.png" alt="">
           </div>
-
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/game.png" alt="">
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-              </div>
-            </div>
+            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
           </div>
         </div>
       </div>

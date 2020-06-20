@@ -75,11 +75,28 @@ body {
 #backgroundimage {
   background-image: url('../img/mountains.png');
   width: 100vw;
-  height: 60vh; 
+  height: 50vh; 
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0 3rem;
 } 
+
+#mypic {
+  background-image: url('../img/jessica.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius:50%;
+} 
+
+@media (max-width: 576px) {
+  #backgroundimage {
+    width: 100vw;
+    height: 40vh; 
+    background-size: 300%;
+    background-repeat: no-repeat;
+  }
+}
+
 
 .typewriter h1 {
   color: black;
@@ -106,6 +123,16 @@ body {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: black }
+}
+
+@media (max-width: 576px) {
+  .typewriter h1 {
+    max-width: 540px;
+    animation: none;
+    white-space: normal;
+    border-right: none;
+    /*overflow: visible;*/
+  }
 }
 
 
@@ -216,7 +243,7 @@ a {
 }
 
 a:hover {
-  color: #fcfbfd;
+  color: #ffa6cc;
   text-decoration: underline;
 }
 
@@ -591,11 +618,12 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #117692;
-  border: 0.125rem solid #dee2e6;
+  background-color: #000000;
+  border: 0.125rem dotted #0000000;
   border-radius: 0.5rem;
   max-width: 100%;
   height: auto;
+  vertical-align: middle
 }
 
 .figure {
@@ -5662,7 +5690,7 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #117692;
+  background-color: #ffa6cc;
   background-clip: padding-box;
   border: 0 solid rgba(0, 0, 0, 0.2);
   border-radius: 0.75rem;
@@ -5676,7 +5704,7 @@ a.close.disabled {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #ffffff;
 }
 
 .modal-backdrop.fade {
@@ -5710,7 +5738,7 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 4rem 1rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 .modal-footer {
@@ -9885,6 +9913,28 @@ a.text-dark:hover, a.text-dark:focus {
   width: 18.5rem;
 }
 
+@media (max-width: 576px) {
+  .masthead {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+  }
+  .masthead .masthead-ending {
+    font-size: 1.75rem;
+  }
+  .masthead-name {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+}
+
 @media (min-width: 992px) {
   .masthead {
     padding-top: 1rem;
@@ -10017,4 +10067,15 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: black;
   color: #fbdce7;
+}
+
+/* hidden on default */
+.popup { display: none; }
+
+/* use a media query to filter small devices */
+@media (max-device-width:480px) {
+    .popup { 
+      position: relative;
+      display: inline-block;
+    }
 }
