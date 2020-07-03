@@ -63,7 +63,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
@@ -100,7 +100,7 @@ body {
 
 .typewriter h1 {
   color: black;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
 }
 
 .pinktext {
@@ -184,7 +184,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 ol ol,
@@ -265,7 +265,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
   font-size: 1em;
 }
 
@@ -276,7 +276,7 @@ pre {
 }
 
 figure {
-  margin: 0 0 1rem;
+  margin: 0 0 0rem;
 }
 
 img {
@@ -447,7 +447,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -528,49 +528,49 @@ large,
 mark,
 .markpink {
   padding: 0.1em;
-  background-color: #fcc7de;
+  background-color: #f4a9ca;
 }
 
 mark,
 .markpink:hover {
   padding: 0.1em;
-  background-color: #f688af;
+  background-color: #fb88b9;
 }
 
 mark,
 .markgreen {
   padding: 0.1em;
-  background-color: #b4fbd2;
+  background-color: #9aeabc;
 }
 
 mark,
 .markgreen:hover {
   padding: 0.1em;
-  background-color: #5efba0;
+  background-color: #72e7a3;
 }
 
 mark,
 .markblue {
   padding: 0.1em;
-  background-color: #8cfcff;
+  background-color: #8de1f2;
 }
 
 mark,
 .markblue:hover {
   padding: 0.1em;
-  background-color: #60f3f6;
+  background-color: #42cfec;
 }
 
 mark,
 .markpurple {
   padding: 0.1em;
-  background-color: #e0aaf9;
+  background-color: #e0bdf0;
 }
 
 mark,
 .markpurple:hover {
   padding: 0.1em;
-  background-color: #d579ff;
+  background-color: #d082f4;
 }
 
 .list-unstyled {
@@ -631,7 +631,7 @@ mark,
 }
 
 .figure-img {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   line-height: 1;
 }
 
@@ -5607,7 +5607,7 @@ a.close.disabled {
 
 .modal {
   position: fixed;
-  top: 0;
+  top: 2rem;
   left: 0;
   z-index: 1050;
   display: none;
@@ -5619,7 +5619,7 @@ a.close.disabled {
 
 .modal-dialog {
   position: relative;
-  width: auto;
+  width: calc(100% - 30rem);
   margin: 0.5rem;
   pointer-events: none;
 }
@@ -5655,7 +5655,9 @@ a.close.disabled {
 }
 
 .modal-dialog-scrollable .modal-body {
+  max-height: calc(100vh - 8rem);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-dialog-centered {
@@ -5690,11 +5692,12 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #ffa6cc;
+  background-color: #f2c8db;
   background-clip: padding-box;
-  border: 0 solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.75rem;
-  outline: 0;
+  border: solid #000;
+  border-width: 0.15rem;
+  /*border-radius: 2rem;*/
+/*  outline: 5;*/
 }
 
 .modal-backdrop {
@@ -5738,7 +5741,7 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 
 .modal-footer {
@@ -5807,7 +5810,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5920,7 +5923,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6368,19 +6371,27 @@ button.bg-primary:focus {
 }
 
 .bg-pink {
-  background-color: #fcc7de !important;
+  background-color: #f2c8db !important;
+  padding-bottom: 25px;
+  padding-top: 20px;
 }
 
 .bg-green {
-  background-color: #b4fbd2 !important;
+  background-color: #bbeed0 !important;
+  padding-bottom: 25px;
+  padding-top: 20px;
 }
 
 .bg-blue {
-  background-color: #8cfcff !important;
+  background-color: #a6e8ea !important;
+  padding-bottom: 25px;
+  padding-top: 20px;
 }
 
 .bg-purple {
-  background-color: #e0aaf9 !important;
+  background-color: #e2c3f0 !important;
+  padding-bottom: 25px;
+  padding-top: 20px;
 }
 
 
@@ -9515,11 +9526,11 @@ button.bg-dark:focus {
 }
 
 .font-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 550 !important;
 }
 
 .font-weight-bolder {
-  font-weight: bolder !important;
+  font-weight: 700 !important;
 }
 
 .font-italic {
@@ -9533,6 +9544,19 @@ button.bg-dark:focus {
 .text-grey {
   color:  #e3e3e3 !important;
 }
+
+.text-pink {
+  color:  #fcc7de !important;
+}
+
+.text-green {
+  color:  #87e3ae !important;
+}
+
+.text-blue {
+  color:  #8cfcff !important;
+}
+
 
 .text-black {
   color:  black !important;
@@ -9812,7 +9836,7 @@ a.text-dark:hover, a.text-dark:focus {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
   font-weight: 500;
 }
 
@@ -9952,18 +9976,81 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.portfolio {
-  margin-bottom: -30px;
+.research {
+  margin-bottom: 0px;
 }
 
-.portfolio .portfolio-item {
+.research .research-item {
+  padding: 1rem;
+  background-color: #86ddab;
   cursor: pointer;
   position: relative;
   display: block;
   max-width: 25rem;
-  margin-bottom: 30px;
-  border-radius: 0.5rem;
+  margin-bottom: 20px;
+  border-radius: 20%;
   overflow: hidden;
+  border: solid #000;
+  border-width: 1px 1px;
+}
+
+.research .research-item .research-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: black;
+}
+
+.research .research-item .research-item-caption:hover {
+  opacity: 1;
+}
+
+.research .research-item .research-item-caption .research-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.research-modal .research-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .research-modal .research-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.research-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #fcfbfd;
+  opacity: 1;
+}
+
+
+.portfolio {
+  margin-bottom: 0px;
+}
+
+.portfolio .portfolio-item {
+  padding: 1rem;
+  background-color: #e79dbd;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 20px;
+  border-radius: 20%;
+  overflow: hidden;
+  border: solid #000;
+  border-width: 1px 1px;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -9972,7 +10059,7 @@ a.text-dark:hover, a.text-dark:focus {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: black;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -9984,18 +10071,89 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .portfolio-modal .portfolio-modal-title {
+  font-size: 2rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+/*@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}*/
+
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 2rem;
+  top: 1rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: #bfaebd;
+  font-weight: 150;
+  opacity: 1.0;
+}
+
+.portfolio-modal .close:hover {
+  opacity: 1.0; 
+  color: #ffffff;
+}
+
+.portfolio-body-font {
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-family: Helvetica;
+}
+
+.industry {
+  margin-bottom: 0px;
+}
+
+.industry .industry-item {
+  padding: 1rem;
+  background-color: #5dc1d6;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 20px;
+  border-radius: 20%;
+  overflow: hidden;
+  border: solid #000;
+  border-width: 1px 1px;
+}
+
+.industry .industry-item .industry-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: black;
+}
+
+.industry .industry-item .industry-item-caption:hover {
+  opacity: 1;
+}
+
+.industry .industry-item .industry-item-caption .industry-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.industry-modal .industry-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
 }
 
 @media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
+  .industry-modal .industry-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
   }
 }
 
-.portfolio-modal .close {
+.industry-modal .close {
   position: absolute;
   z-index: 1;
   right: 1.5rem;
@@ -10004,6 +10162,51 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 3rem;
   color: #fcfbfd;
   opacity: 1;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 6vw);
+  grid-gap: 1rem; 
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+   grid-column: 1 / span 3;  
+   grid-row: 1 / span 2; 
+}
+
+/*.gallery__item--2 {
+   grid-column: 3 / span 2;  
+   grid-row: 1 / span 2; 
+}*/
+
+.gallery__item--3 {
+  grid-column: 4 / span 4;
+  grid-row: 1 / span 3; 
+}
+
+.gallery__item--4 {
+   grid-column: 1 / span 3;  
+   grid-row: 3 / span 5; 
+}
+
+/*.gallery__item--5 {
+   grid-column: 5 / span 1; 
+   grid-row: 6 / span 3; 
+}*/
+
+.gallery__item--6 {
+   grid-column: 4 / span 5; 
+   grid-row: 4 / span 4; 
 }
 
 .floating-label-form-group {
@@ -10079,3 +10282,4 @@ form .row:first-child .floating-label-form-group {
       display: inline-block;
     }
 }
+
