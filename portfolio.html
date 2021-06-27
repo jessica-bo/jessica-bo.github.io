@@ -8,13 +8,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Jessica Bo</title>
+  <title>Jessica Bo | Projects</title>
 
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Theme CSS -->
   <link href="css/freelancer.css" rel="stylesheet">
@@ -27,178 +31,254 @@
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Jessica Bo</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-secondary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">About</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger large" href="index.html">About</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="portfolio.html">Projects</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger large" href="portfolio.html">Projects</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
   <!-- Portfolio Section -->
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <h1 class="page-section-heading text-center text-uppercase mb-6">Projects</h1>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+      <h4 class="mt-6">> <highlight>Robotics & Vision</highlight></h4>
+      <div class="row mb-6">
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#wheelchair">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Wheelchair detection and orientation classification in application to human interactions for mobile robots.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/wheelchair.png" alt="">
+          </div>
+          <div class="portfolio-label">Wheelchair Detection for Mobile Robots</div>
+          <div class="portfolio-skill">python, ROS, scikit-learn, tensorflow</div>
         </div>
-        <div class="divider-custom-line"></div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#3dvision">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Improving HoloLens point cloud registration with the Guranteed Outlier Removal algorithm.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/3dvision.png" alt="">
+          </div>
+          <div class="portfolio-label">HoloLens Mesh Alignment</div>
+          <div class="portfolio-skill">MATLAB, 3D vision</div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#qnx">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Obstacles & free space detection with LiDAR sensors and visualization on autonomous vehicle displays.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/qnx.png" alt="">
+          </div>
+          <div class="portfolio-label">QNX: Obstacle Detection with LiDAR</div>
+          <div class="portfolio-skill">C, LiDAR, autonomous vehicle sensors </div>
+        </div>
       </div>
 
-      <!-- Portfolio Grid Items -->
-      <div class="row">
-
-        <!-- Portfolio Item 1 -->
+      <h4 class="mt-6">> <highlight>Biomedical & Rehabilation</highlight></h4>
+      <div class="row mb-6">
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#attentiv">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+              <div class="portfolio-item-caption-content text-center">
+                <p>Sensor-embedded catheter aimed to detect IV failures in real-time.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+            <img class="img-fluid" src="img/portfolio/attentiv_medical.png" alt="">
           </div>
+          <div class="portfolio-label">Attentiv Catheter for IV Treatment</div>
+          <div class="portfolio-skill">python, bioelectronics, entrepreneurship</div>
         </div>
 
-        <!-- Portfolio Item 2 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#certec">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+              <div class="portfolio-item-caption-content text-center">
+                <p>Hand spasticity rehabilitation wearable aimed to increase interactivity and patient compliance.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <img class="img-fluid" src="img/portfolio/certec.jpg" alt="">
           </div>
+          <div class="portfolio-label">Interactive Stroke Rehabilitation Wearable</div>
+          <div class="portfolio-skill">Arduino, sensors, user testing</div>
         </div>
 
-        <!-- Portfolio Item 3 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#fraxure">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+              <div class="portfolio-item-caption-content text-center">
+                <p>Pneumatic traction device for femur fracture treatment in low-resource settings.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+            <img class="img-fluid" src="img/portfolio/fraxure.jpg" alt="">
           </div>
+          <div class="portfolio-label">FraXure: Femur Fracture Traction Device</div>
+          <div class="portfolio-skill">CAD, testing, biomechanical analysis</div>
         </div>
 
-        <!-- Portfolio Item 4 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#h4ptic">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+              <div class="portfolio-item-caption-content text-center">
+                <p>Haptic-based "touch" feedback for upper limb prosthetic users.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+            <img class="img-fluid" src="img/portfolio/h4ptic.png" alt="">
           </div>
+          <div class="portfolio-label">H4ptic: Sensory Feedback Wearable</div>
+          <div class="portfolio-skill">haptic feedback, neuroscience</div>
         </div>
 
-        <!-- Portfolio Item 5 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#recrutch">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+              <div class="portfolio-item-caption-content text-center">
+                <p>Crutches redesigned for optimal ergonomics for long-term use.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+            <img class="img-fluid" src="img/portfolio/recrutch.png" alt="">
           </div>
+          <div class="portfolio-label">ReCrutch: Reimagined Crutches</div>
+          <div class="portfolio-skill">CAD, ergonomics</div>
+        </div>
+      </div>
+
+      <h4 class="mt-6">> <highlight>Engineering</highlight></h4>
+      <div class="row mb-6">
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#heelevator">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Automated ski heel raiser to reduce energy expenditure in backcountry ascension.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/heelevator.png" alt="">
+          </div>
+          <div class="portfolio-label">Automated Heel Raiser for Skiing</div>
+          <div class="portfolio-skill">mechanical design, biomechanics analysis</div>
         </div>
 
-        <!-- Portfolio Item 6 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#orbit">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+              <div class="portfolio-item-caption-content text-center">
+                <p>Structural design and simulations for a mini satellite.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+            <img class="img-fluid" src="img/portfolio/orbit.jpg" alt="">
           </div>
+          <div class="portfolio-label">ORBIT CubeSat</div>
+          <div class="portfolio-skill">CAD, MATLAB, simulation</div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#fireboat">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Fire-fighting RC boat optimized for speed and water release.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/fireboat.png" alt="">
+          </div>
+          <div class="portfolio-label">Remote-Controlled Fireboat</div>
+          <div class="portfolio-skill">mechanical design, testing, visual design</div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#regen">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Arduino-controlled car with capacity to regain energy through braking.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/regen.png" alt="">
+          </div>
+          <div class="portfolio-label">Regenerative Braking Car</div>
+          <div class="portfolio-skill">mechanical design, Arduino, controls</div>
+        </div>
+      </div>
+
+      <h4 class="mt-3">> <highlight>Design & Art</highlight></h4>
+      <div class="row mb-6">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#forest">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>An audio and visual immersive first-person escape game set in a forest with a dark secret.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/into_the_forest.png" alt="">
+          </div>
+          <div class="portfolio-label">Into the Forest: Immersive Game</div>
+          <div class="portfolio-skill">Unity, Blender, visual design, storyboarding</div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#myohome">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Model house with appliances and lights controllable with simple hand gestures.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/myohome.png" alt="">
+          </div>
+          <div class="portfolio-label">MyoHome: Gesture-Controlled Smarthome</div>
+          <div class="portfolio-skill">mechanical construction, visual design</div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#postcards">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Sketches and pictures from times abroad.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/postcards.jpeg" alt="">
+          </div>
+          <div class="portfolio-label">Postcards & Sketches</div>
+          <div class="portfolio-skill">visual art</div>
         </div>
 
       </div>
-      <!-- /.row -->
 
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-
-        <!-- Footer Location -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">2215 John Daniel Drive
-            <br>Clark, MO 65243</p>
-        </div>
-
-        <!-- Footer Social Icons -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-facebook-f"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-twitter"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-dribbble"></i>
-          </a>
-        </div>
-
-        <!-- Footer About Text -->
-        <div class="col-lg-4">
-          <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-        </div>
-
-      </div>
-    </div>
-  </footer>
 
   <!-- Copyright Section -->
-  <section class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
+  <section class="copyright text-center">
+    <div class="pt-5 pb-5" style="background-image: url('img/mountains.png'); background-size: contain, cover; background-repeat: repeat-x;">
+      <small class="mt-6"><fulllight>made by © Jessica Bo 2021</fulllight></small>
     </div>
   </section>
-
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
 
   <!-- Portfolio Modals -->
 
   <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="wheelchair" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -221,9 +301,9 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
+                <img class="img-fluid rounded mb-6" src="img/portfolio/cabin.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -237,7 +317,7 @@
   </div>
 
   <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="3dvision" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -260,9 +340,9 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
+                <img class="img-fluid rounded mb-6" src="img/portfolio/cake.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -276,7 +356,7 @@
   </div>
 
   <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="attentiv" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -299,9 +379,9 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
+                <img class="img-fluid rounded mb-6" src="img/portfolio/circus.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -315,7 +395,7 @@
   </div>
 
   <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="fraxure" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -338,9 +418,9 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
+                <img class="img-fluid rounded mb-6" src="img/portfolio/game.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -354,7 +434,7 @@
   </div>
 
   <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="forest" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -377,9 +457,9 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
+                <img class="img-fluid rounded mb-6" src="img/portfolio/safe.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -416,9 +496,9 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
+                <img class="img-fluid rounded mb-6" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -437,10 +517,6 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
