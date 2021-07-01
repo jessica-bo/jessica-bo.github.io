@@ -303,88 +303,12 @@
             <div class="row justify-content-center">
               <div class="col-lg-10">
                 <h1 class="portfolio-modal-title mb-4 text-center">Wheelchair Detection for Mobile Robots</h1>
-                <body>
-                  <div id="unity-container" class="unity-desktop">
-                    <canvas id="unity-canvas" width=960 height=600></canvas>
-                    <div id="unity-loading-bar">
-                      <div id="unity-logo"></div>
-                      <div id="unity-progress-bar-empty">
-                        <div id="unity-progress-bar-full"></div>
-                      </div>
-                    </div>
-                    <div id="unity-mobile-warning">
-                      WebGL builds are not supported on mobile devices.
-                    </div>
-                    <div id="unity-footer">
-                      <div id="unity-webgl-logo"></div>
-                      <div id="unity-fullscreen-button"></div>
-                      <div id="unity-build-title">IntoTheForest</div>
-                    </div>
-                  </div>
-                  <script>
-                    var buildUrl = "assets/Build";
-                    var loaderUrl = buildUrl + "/assets.loader.js";
-                    var config = {
-                      dataUrl: buildUrl + "/assets.data.unityweb",
-                      frameworkUrl: buildUrl + "/assets.framework.js.unityweb",
-                      codeUrl: buildUrl + "/assets.wasm.unityweb",
-                      streamingAssetsUrl: "StreamingAssets",
-                      companyName: "JKA",
-                      productName: "IntoTheForest",
-                      productVersion: "0.1",
-                    };
-
-                    var container = document.querySelector("#unity-container");
-                    var canvas = document.querySelector("#unity-canvas");
-                    var loadingBar = document.querySelector("#unity-loading-bar");
-                    var progressBarFull = document.querySelector("#unity-progress-bar-full");
-                    var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-                    var mobileWarning = document.querySelector("#unity-mobile-warning");
-
-                    // By default Unity keeps WebGL canvas render target size matched with
-                    // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-                    // Set this to false if you want to decouple this synchronization from
-                    // happening inside the engine, and you would instead like to size up
-                    // the canvas DOM size and WebGL render target sizes yourself.
-                    // config.matchWebGLToCanvasSize = false;
-
-                    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-                      container.className = "unity-mobile";
-                      // Avoid draining fillrate performance on mobile devices,
-                      // and default/override low DPI mode on mobile browsers.
-                      config.devicePixelRatio = 1;
-                      mobileWarning.style.display = "block";
-                      setTimeout(() => {
-                        mobileWarning.style.display = "none";
-                      }, 5000);
-                    } else {
-                      canvas.style.width = "960px";
-                      canvas.style.height = "600px";
-                    }
-                    loadingBar.style.display = "block";
-
-                    var script = document.createElement("script");
-                    script.src = loaderUrl;
-                    script.onload = () => {
-                      createUnityInstance(canvas, config, (progress) => {
-                        progressBarFull.style.width = 100 * progress + "%";
-                      }).then((unityInstance) => {
-                        loadingBar.style.display = "none";
-                        fullscreenButton.onclick = () => {
-                          unityInstance.SetFullscreen(1);
-                        };
-                      }).catch((message) => {
-                        alert(message);
-                      });
-                    };
-                    document.body.appendChild(script);
-                  </script>
-                </body>
+              
                 <div class="video-container mb-4">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/616wz9Kjdw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <h6 class="large font-weight-bold"><highlight>Abstract: </highlight></h6>
-                <p class="mb-3">Autonomous mobile robots are being introduced in human-populated environments with increasing frequency. Hence, ensuring safe and intuitive human-robot interaction (HRI) is becoming a growing need, especially for less common pedestrian groups like wheelchair users. Wheel- chair dynamics differ from those of foot pedestrians, so accurate characterization of a wheelchair’s orientation for trajectory prediction is crucial. The 2D laser scanner is a well-suited sensor for accurate distance measurements with fast computation speeds, but the sparsity of its data is often a hindrance to effective object detection. Despite so, we demonstrate that 2D range data from laser scanners can be used effectively to detect wheelchairs and estimate their orientation, even in cluttered environments. We pre- process the range data by using density-based clustering for object segmentation. Our two-step classification algorithm first identifies wheelchair candidates from segmented objects with random forest, then estimates the wheelchair’s orientation as one of six classes with a neural network. </p>
+                <p class="mb-3">Autonomous mobile robots are being introduced in human-populated environments with increasing frequency. Hence, ensuring safe and intuitive human-robot interaction (HRI) is becoming a growing need, especially for less common pedestrian groups like wheelchair users. Wheel- chair dynamics differ from those of foot pedestrians, so accurate characterization of a wheelchair’s orientation for trajectory prediction is crucial. The 2D laser scanner is a well-suited sensor for accurate distance measurements with fast computation speeds, but the sparsity of its data is often a hindrance to effective object detection. Despite so, we demonstrate that 2D range data from laser scanners can be used effectively to detect wheelchairs and estimate their orientation, even in cluttered environments. We pre-process the range data by using density-based clustering for object segmentation. Our two-step classification algorithm first identifies wheelchair candidates from segmented objects with random forest, then estimates the wheelchair’s orientation as one of six classes with a neural network. </p>
 
                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
@@ -1034,6 +958,12 @@
                 <h1 class="portfolio-modal-title mb-4 text-center">Into the Forest: Immersive Game</h1>
                 <div class="video-container mb-4">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/q1nEGKHzwJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="large mb-2 font-weight-bold text-center">
+                  <a href="intotheforest.html" target="_blank">
+                    > <highlight>Play the Game Demo!</highlight>
+                  </a>
                 </div>
 
                 <h6 class="large font-weight-bold "><highlight>Motivation: </highlight></h6>
