@@ -82,7 +82,7 @@
             </div>
             <img class="img-fluid" src="img/portfolio/3dvision.png" alt="">
           </div>
-          <div class="portfolio-label">HoloLens Mesh Alignment</div>
+          <div class="portfolio-label">HoloLens 3D Mesh Registration</div>
           <div class="portfolio-skill">MATLAB, 3D vision</div>
         </div>
 
@@ -183,6 +183,19 @@
 
       <h4 class="mt-6">> <highlight>Mixed Reality & Interaction</highlight></h4>
       <div class="row mb-6">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#hololabel">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Semantic annotation of 3D scenes with the HoloLens.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/hololabel.png" alt="">
+          </div>
+          <div class="portfolio-label">HoloLabel: AR Scene Annotator</div>
+          <div class="portfolio-skill">Unity, HoloLens, Python</div>
+        </div>
 
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#forest">
@@ -572,6 +585,12 @@
                 <h1 class="portfolio-modal-title mb-4 text-center">FraXure: Femur Fracture Traction Device</h1>
                 <div class="video-container mb-4">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/5eSBk5gFeGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="large mb-2 font-weight-bold text-center">
+                  <a href="documents/FraXureReport.pdf" target="_blank">
+                    > <highlight>Full Project Report</highlight>
+                  </a>
                 </div>
 
                 <h6 class="large font-weight-bold"><highlight>Motivation: </highlight></h6>
@@ -975,6 +994,54 @@
                 <h6 class="large font-weight-bold"><highlight>Collaborators: </highlight></h6>
                 <ul>
                   <li>Members of the UBC ORBIT team</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="hololabel" tabindex="-1" role="dialog" aria-labelledby="hololabelLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times fa-xs"></i>
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <h1 class="portfolio-modal-title mb-4 text-center">HoloLabel: AR Scene Annotator</h1>
+                <div class="video-container mb-4">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/K0sVDIbSMh4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="large mb-2 font-weight-bold text-center">
+                  <a href="documents/Mixed_Reality_final_report.pdf" target="_blank">
+                    > <highlight>Paper (Class Submission)</highlight>
+                  </a>
+                </div>
+
+                <h6 class="large font-weight-bold "><highlight>Motivation: </highlight></h6>
+                <p> As the popularity of supervised and semi-supervised learning tasks in embodied perception rises, so does the demand for large-scale annotated 3D scene datasets. Devices equipped with RGB cameras and depth sensors being readily available simplifies the task of capturing and reconstructing an environment as a 3D mesh. However, the task of manually labelling this 3D data is still non-trivial. To obtain semantic information about the scene, experts often have to work for many hours using non-intuitive and error-prone tools. To address this problem, we propose a HoloLens application to allow a user to directly annotate the scene with semantic information while simultaneously capturing the spatial environment mesh. Our tool focuses on 3D mesh-based semantic segmentation, i.e. annotating areas of the scene using a predefined set of classes. We leverage the HoloLens' Spatial Mapping feature to generate a 3D mesh of the scene and apply an automatic segmentation algorithm to generate segmentation proposals. The user can use a virtual paint brush to refine the segments or create new ones. Finally, we allow the option to add richer semantic descriptions using voice-to-text technology. We aim to lay the groundwork to integrate mixed reality devices in enabling intuitive 3D scene annotation in the real world.
+                </p>
+
+                <h6 class="large font-weight-bold "><highlight>Responsibilities: </highlight></h6>
+                <ul>
+                  <li>Developed augmented reality user interface with Mixed Reality Toolkit (MRTK) for HoloLens</li>
+                  <li>Designed user test to assess efficiency of using the tool and the accuracy of annotation</li>
+                  <li>Created a video tutorial for user study participants </li>
+                </ul>
+
+                <h6 class="large font-weight-bold"><highlight>Collaborators: </highlight></h6>
+                <ul>
+                  <li>Janik L. (ETH Zurich INFK)</li>
+                  <li>Dhruv A. (ETH Zurich INFK)</li>
+                  <li>Veronique K. (ETH Zurich INFK)</li>
                 </ul>
               </div>
             </div>
