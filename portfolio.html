@@ -43,7 +43,7 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger large" href="index.html">About</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger large" href="portfolio.html">Projects</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger large" href="portfolio.html">Portfolio</a>
           </li>
         </ul>
       </div>
@@ -56,10 +56,63 @@
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h1 class="page-section-heading text-center text-uppercase mb-6">Projects</h1>
+      <h1 class="page-section-heading text-center text-uppercase">Portfolio</h1>
 
-      <h4 class="mt-6">▶ <highlight>Computational & Learning</highlight></h4>
+      <h4 class="mt-4">▶ <highlight>Publications</highlight></h4>
       <div class="row mb-6">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#incrementalXAI">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Improving memorability and understanding of AI via incremental explanations.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/incrementalXAI.jpg" alt="">
+          </div>
+          <div class="portfolio-label">Incremental XAI: Memorable Understanding of AI with Incremental Explanations</div> 
+          <div class="text-center portfolio-skill"> <u>Bo J</u>, Hao P, Lim B 
+          </div>
+          <div class="text-center"> 
+            <highlight>CHI 2024</highlight>
+            [<a href="documents/incrementalXAI.pdf" target="_blank" class="font-underline">pdf</a>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#llm_aversion">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Investigation into the stated and behavioural aversion to algorithms exhibited by GPT models.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/llm_aversion.jpg" alt="">
+          </div>
+          <div class="portfolio-label">Does GPT Distrust Algorithms? Evaluating Large Language Models”. </div> 
+          <div class="text-center portfolio-skill"> <u>Bo J</u>*, Mok L*, Tie J, Anderson A
+          </div>
+          <div class="text-center"> 
+            <highlight>CHI 2024 workshop</highlight>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#amplify">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Discretizing and amplifying happiness in animated faces.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/amplify.jpg" alt="">
+          </div>
+          <div class="portfolio-label">Make it Happier! Discretizing and Amplifying Happiness in Animated Faces</div>
+          <div class="portfolio-skill">Zhao Z*, <u> Bo J</u>*, Pan J, Singh K</div>
+          <div class="text-center"> 
+            [<a href="https://zxnnic.github.io/amplifying-emotion/" target="_blank" class="font-underline">project page</a>] 
+            [<a href="https://github.com/zxnnic/amplifying-emotion/tree/main" target="_blank" class="font-underline">code</a>]
+          </div>
+        </div>
+
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ecg">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -69,10 +122,13 @@
             </div>
             <img class="img-fluid" src="img/portfolio/mask_ecg.png" alt="">
           </div>
-          <div class="portfolio-label">Adversarial Masking for ECGs</div> 
+          <div class="portfolio-label">Pretraining ECG Data with Adversarial Masking Improves Model Generalizability for Data-Scarce Tasks</div> 
+          <div class="text-center portfolio-skill"> <u>Bo J</u>, Huang HW, Chan A, Traverso G 
+          </div>
           <div class="text-center"> 
-            [<highlight><a href="http://arxiv.org/abs/2211.07889" target="_blank">ML4H paper</a></highlight>]
-            [<highlight><a href="https://github.com/jessica-bo/advmask_ecg" target="_blank">code</a></highlight>]
+            <highlight>NeurIPS 2022 workshop</highlight>
+            [<a href="documents/advmask.pdf" target="_blank" class="font-underline">pdf</a>]
+            [<a href="https://github.com/jessica-bo/advmask_ecg" target="_blank" class="font-underline">code</a>]
           </div>
         </div>
 
@@ -80,32 +136,58 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#clipasso">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center">
-                <p>Semantically guided sketch generation with a CLIP-based loss (see <a href="https://clipasso.github.io/clipasso/" target="_blank"><u>project page</u></a>).</p>
+                <p>Semantically guided sketch generation with a CLIP-based loss.</p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/clipasso.png" alt="">
           </div>
-          <div class="portfolio-label">CLIPasso: Sketch Synthesis</div>
+          <div class="portfolio-label">CLIPasso: Semantically-Aware Object Sketching</div>
           <!-- <div class="portfolio-skill">python, video</div> -->
+          <div class="text-center portfolio-skill">Vinker Y, Pajouheshgar E, <u>Bo J</u>, Bachmann R, Bermano AH, Cohen-Or D, Zamir A, Shamir A 
+          </div>
           <div class="text-center"> 
-            [<highlight><a href="https://arxiv.org/abs/2202.05822" target="_blank">SIGGRAPH paper</a></highlight>]
-            [<highlight><a href="https://clipasso.github.io/clipasso/" target="_blank">project page</a></highlight>]
+            <highlight>SIGGRAPH 2022 (best paper)</highlight>
+            [<a href="documents/clipasso.pdf" target="_blank" class="font-underline">pdf</a>]
+            [<a href="https://clipasso.github.io/clipasso/" target="_blank" class="font-underline">project page</a>]
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#worldloop">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#attentiv">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center">
-                <p>Evaluating the perceptual abilities developed by embodied active agents.</p>
+                <p>Sensor-embedded catheter for detecting IV failures in real-time.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/actionperceptionloop.png" alt="">
+            <img class="img-fluid" src="img/portfolio/attentiv_medical.png" alt="">
           </div>
-          <div class="portfolio-label">Worldloop Transfer: Embodied Perception</div>
-          <!-- <div class="portfolio-skill">python, pytorch</div> -->
+          <div class="portfolio-label">ATTENTIV: Instrumented Peripheral Catheter for the Detection of
+Catheter Dislodgement in IV Infiltration</div>
+          <div class="portfolio-skill"><u>Bo J</u>, Ta K, Nishida R, Yeh G, Tsang V, Bolton M, Ranger M, Walus K </div>
           <div class="text-center"> 
-            [<highlight><a href="documents/Worldloop_Project.pdf" target="_blank">semester thesis</a></highlight>]
+            <highlight>IEEE EMBC 2022</highlight>
+            [<a href="documents/attentiv.pdf" target="_blank" class="font-underline">pdf</a>] 
+            [<a href="https://www.attentivmedical.com/" target="_blank" class="font-underline">website</a>]
+            <!-- [<highlight><a href="https://youtu.be/FXWrNxUOlpI" target="_blank">video</a></highlight>] -->
+          </div>
+        </div>
+
+
+      <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#hololabel">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Semantic annotation of 3D scenes with the HoloLens.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/hololabel.png" alt="">
+          </div>
+          <div class="portfolio-label">HoloLabel: Augmented Reality User-In-The-Loop Online Annotation Tool for As-Is Building Information</div>
+          <div class="portfolio-skill">Agrawal D*, Lobsiger J*, <u>Bo J</u>, Kaufmann V, Armeni I </div>
+          <div class="text-center"> 
+            <highlight>EC3 2022</highlight>
+            [<a href="documents/HoloLabel_EC3_2022.pdf" target="_blank">pdf</a>]
+            [<a href="https://gitlab.ethz.ch/dagrawal/mixed-reality-ar-scene-annotation-project" target="_blank">code</highlight>]
           </div>
         </div>
 
@@ -119,10 +201,65 @@
             <img class="img-fluid" src="img/portfolio/wheelchair.png" alt="">
           </div>
           <div class="portfolio-label">Wheelchair Detection for Mobile Robots</div>
-          <!-- <div class="portfolio-skill">python, ROS, scikit-learn</div> -->
+          <div class="portfolio-skill"><u> Bo J</u>, Van der Loos M</div>
           <div class="text-center"> 
-            [<highlight><a href="https://ieeexplore.ieee.org/abstract/document/9594328" target="_blank">IEEE paper</a></highlight>]
-            <!-- [<highlight><a href="https://youtu.be/616wz9Kjdw0" target="_blank">video</a></highlight>] -->
+            <highlight>BIOMDLORE 2021</highlight>
+            [<a href="documents/wheelchair.pdf" target="_blank">pdf</a>]
+          </div>
+        </div>
+
+
+      </div>
+
+      <h4 class="mt-6">▶ <highlight>Projects</highlight></h4>
+      <div class="row mb-6">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#worldloop">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Evaluating the perceptual abilities developed by embodied active agents.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/actionperceptionloop.png" alt="">
+          </div>
+          <div class="portfolio-label">Worldloop Transfer: Embodied Perception</div>
+          <div class="text-center"> 
+            [<a href="documents/Worldloop_Project.pdf" target="_blank" class="font-underline">pdf</a>]
+          </div>
+        </div>
+
+                        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#forest">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>An audio- and visual-immersive escape game set in a mysterious forest.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/into_the_forest.png" alt="">
+          </div>
+          <div class="portfolio-label">Into the Forest: Immersive Game</div>
+          <!-- <div class="portfolio-skill">Unity, Blender, visual design, storyboarding</div> -->
+          <div class="text-center"> 
+            [<a href="intotheforest.html" target="_blank" class="font-underline">game demo</a>]
+            <!-- [<highlight><a href="https://youtu.be/q1nEGKHzwJc" target="_blank">video</a></highlight>],  -->
+            [<a href="https://github.com/jessica-bo/intotheforest" target="_blank" class="font-underline">code</a>]
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#fraxure">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Femur fracture treatment device for low-resource settings.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/fraxure.jpg" alt="">
+          </div>
+          <div class="portfolio-label">FraXure: Femur Fracture Traction Device</div>
+          <div class="text-center"> 
+            [<a href="documents/FraXureReport.pdf" target="_blank" class="font-underline">pdf</a>]
           </div>
         </div>
 
@@ -136,65 +273,11 @@
             <img class="img-fluid" src="img/portfolio/3dvision.png" alt="">
           </div>
           <div class="portfolio-label">HoloLens 3D Mesh Registration</div>
-          <!-- <div class="portfolio-skill">MATLAB, 3D vision</div> -->
           <div class="text-center"> 
-            [<highlight><a href="documents/3DVReport.pdf" target="_blank">class paper</a></highlight>]
+            [<a href="documents/3DVReport.pdf" target="_blank" class="font-underline">pdf</a>]
           </div>
-        </div>
+        </div> 
 
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#qnx">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <p>Obstacles & free space detection with LiDAR sensors for autonomous vehicles.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/qnx.png" alt="">
-          </div>
-          <div class="portfolio-label">QNX: Obstacle Detection with LiDAR</div>
-          <!-- <div class="portfolio-skill">C, LiDAR, autonomous vehicle sensors </div> -->
-          <div class="text-center">
-            <!-- [<highlight><a href="https://youtu.be/2hacaURM8f8" target="_blank">video</a></highlight>] -->
-          </div>
-        </div>
-      </div>
-
-      <h4 class="mt-6">▶ <highlight>Biomedical</highlight></h4>
-      <div class="row mb-6">
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#attentiv">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <p>Sensor-embedded catheter for detecting IV failures in real-time.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/attentiv_medical.png" alt="">
-          </div>
-          <div class="portfolio-label">Attentiv Catheter for IV Treatment</div>
-          <!-- <div class="portfolio-skill">python, bioelectronics, entrepreneurship</div> -->
-          <div class="text-center"> 
-            [<highlight><a href="https://ieeexplore.ieee.org/abstract/document/9871840?casa_token=CO8O2pvHlA4AAAAA:gBqKwMDIBFGGpEf5kmdfQinJ_f-7eEwpHNyn3TR0AceXi7SbEc2d0neR294ofYEXdSU0boJKulA" target="_blank">IEEE paper</a></highlight>] 
-            [<highlight><a href="https://www.attentivmedical.com/" target="_blank">website</a></highlight>]
-            <!-- [<highlight><a href="https://youtu.be/FXWrNxUOlpI" target="_blank">video</a></highlight>] -->
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#fraxure">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <p>Femur fracture treatment device for low-resource settings.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/fraxure.jpg" alt="">
-          </div>
-          <div class="portfolio-label">FraXure: Femur Fracture Traction Device</div>
-          <!-- <div class="portfolio-skill">CAD, testing, biomechanical analysis</div> -->
-          <div class="text-center"> 
-            [<highlight><a href="documents/FraXureReport.pdf" target="_blank">project report</a></highlight>]
-            <!-- [<highlight><a href="https://youtu.be/5eSBk5gFeGo" target="_blank">video</a></highlight>] -->
-          </div>
-        </div>
 
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#haptic">
@@ -206,11 +289,25 @@
             <img class="img-fluid" src="img/portfolio/h4ptic.png" alt="">
           </div>
           <div class="portfolio-label">H4ptic: Sensory Feedback Wearable</div>
-          <!-- <div class="portfolio-skill">haptic feedback</div> -->
           <div class="text-center">
-            <!-- [<highlight><a href="https://youtu.be/zJf1ysjxdwo" target="_blank">video</a></highlight>] -->
           </div>
         </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#qnx">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Obstacles & free space detection with LiDAR sensors for autonomous vehicles.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/qnx.png" alt="">
+          </div>
+          <div class="portfolio-label">QNX: Obstacle Detection with LiDAR</div>
+          <div class="text-center">
+          </div>
+        </div>
+
 
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#certec">
@@ -222,94 +319,9 @@
             <img class="img-fluid" src="img/portfolio/certec.JPG" alt="">
           </div>
           <div class="portfolio-label">Interactive Stroke Rehabilitation Wearable</div>
-          <!-- <div class="portfolio-skill">Arduino, sensors, user testing</div> -->
         </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#recrutch">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <p>Crutches designed for optimal ergonomics.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/recrutch.png" alt="">
-          </div>
-          <div class="portfolio-label">ReCrutch: Reimagined Crutches</div>
-          <!-- <div class="portfolio-skill">CAD, ergonomics</div> -->
-        </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#emr">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <p>Investigating international attitudes towards electronic medical record systems.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/emr.png" alt="">
-          </div>
-          <div class="portfolio-label">Perception of Electronic Medical Records</div>
-          <!-- <div class="portfolio-skill">data collection, statistical analysis</div> -->
-        </div>
-      
-      </div>
-
-      <h4 class="mt-6">▶ <highlight>Mixed Reality</highlight></h4>
-      <div class="row mb-6">
-
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#amplify">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <p>Discretizing and amplifying happiness in animated faces (see <a href="https://zxnnic.github.io/amplifying-emotion/" target="_blank"><u>project page</u></a>).</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/amplify.jpg" alt="">
-          </div>
-          <div class="portfolio-label">Make it Happier!</div>
-          <!-- <div class="portfolio-skill">Unity, HoloLens, python</div> -->
-          <div class="text-center"> 
-            [<highlight><a href="https://zxnnic.github.io/amplifying-emotion/" target="_blank">project page</a></highlight>] 
-            [<highlight><a href="https://github.com/zxnnic/amplifying-emotion/tree/main" target="_blank">code</a></highlight>]
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#hololabel">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <p>Semantic annotation of 3D scenes with the HoloLens.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/hololabel.png" alt="">
-          </div>
-          <div class="portfolio-label">HoloLabel: AR Scene Annotator</div>
-          <!-- <div class="portfolio-skill">Unity, HoloLens, python</div> -->
-          <div class="text-center"> 
-            [<highlight><a href="documents/HoloLabel_EC3_2022.pdf" target="_blank">EC3 paper</a></highlight>]
-            <!-- [<highlight><a href="https://youtu.be/K0sVDIbSMh4" target="_blank">video</a></highlight>],  -->
-            [<highlight><a href="https://gitlab.ethz.ch/dagrawal/mixed-reality-ar-scene-annotation-project" target="_blank">code</a></highlight>]
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#forest">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <p>An audio- and visual-immersive escape game set in a mysterious forest.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/into_the_forest.png" alt="">
-          </div>
-          <div class="portfolio-label">Into the Forest: Immersive Game</div>
-          <!-- <div class="portfolio-skill">Unity, Blender, visual design, storyboarding</div> -->
-          <div class="text-center"> 
-            <a href="intotheforest.html" target="_blank">
-              [<highlight>game demo</highlight>]
-            </a>
-            <!-- [<highlight><a href="https://youtu.be/q1nEGKHzwJc" target="_blank">video</a></highlight>],  -->
-            [<a href="https://github.com/jessica-bo/intotheforest" target="_blank"><highlight>code</highlight></a>]
-          </div>
-        </div>
 
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#myohome">
@@ -327,7 +339,269 @@
           </div>
         </div>
 
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#emr">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Investigating international attitudes towards electronic medical record systems.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/emr.png" alt="">
+          </div>
+          <div class="portfolio-label">Perception of Electronic Medical Records</div>
+        </div>
+
       </div>
+
+
+<!-- 
+      <h4 class="mt-6">▶ <highlight>Computational & Learning</highlight></h4>
+      <div class="row mb-6">
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ecg">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Adversarial masking for ECG to improve model generalizability.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/mask_ecg.png" alt="">
+          </div>
+          <div class="portfolio-label">Adversarial Masking for ECGs</div> 
+          <div class="text-center"> 
+            [<highlight><a href="http://arxiv.org/abs/2211.07889" target="_blank">NeurIPS 2022 workshop</a></highlight>]
+            [<highlight><a href="https://github.com/jessica-bo/advmask_ecg" target="_blank">code</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#clipasso">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Semantically guided sketch generation with a CLIP-based loss (see <a href="https://clipasso.github.io/clipasso/" target="_blank"><u>project page</u></a>).</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/clipasso.png" alt="">
+          </div>
+          <div class="portfolio-label">CLIPasso: Sketch Synthesis</div>
+          <div class="text-center"> 
+            [<highlight><a href="https://arxiv.org/abs/2202.05822" target="_blank">SIGGRAPH 2022</a></highlight> (best paper)]
+            [<highlight><a href="https://clipasso.github.io/clipasso/" target="_blank">project page</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#worldloop">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Evaluating the perceptual abilities developed by embodied active agents.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/actionperceptionloop.png" alt="">
+          </div>
+          <div class="portfolio-label">Worldloop Transfer: Embodied Perception</div>
+          <div class="text-center"> 
+            [<highlight><a href="documents/Worldloop_Project.pdf" target="_blank">semester thesis</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#wheelchair">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Wheelchair detection and orientation classification for mobile robots.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/wheelchair.png" alt="">
+          </div>
+          <div class="portfolio-label">Wheelchair Detection for Mobile Robots</div>
+          <div class="text-center"> 
+            [<highlight><a href="https://ieeexplore.ieee.org/abstract/document/9594328" target="_blank">BIOMDLORE 2021</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#vision">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Point cloud registration experiments with the HoloLens.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/3dvision.png" alt="">
+          </div>
+          <div class="portfolio-label">HoloLens 3D Mesh Registration</div>
+          <div class="text-center"> 
+            [<highlight><a href="documents/3DVReport.pdf" target="_blank">class paper</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#qnx">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Obstacles & free space detection with LiDAR sensors for autonomous vehicles.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/qnx.png" alt="">
+          </div>
+          <div class="portfolio-label">QNX: Obstacle Detection with LiDAR</div>
+          <div class="text-center">
+          </div>
+        </div>
+      </div>
+
+      <h4 class="mt-6">▶ <highlight>Biomedical</highlight></h4>
+      <div class="row mb-6">
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#attentiv">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Sensor-embedded catheter for detecting IV failures in real-time.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/attentiv_medical.png" alt="">
+          </div>
+          <div class="portfolio-label">Attentiv Catheter for IV Treatment</div>
+          <div class="text-center"> 
+            [<highlight><a href="https://ieeexplore.ieee.org/abstract/document/9871840?casa_token=CO8O2pvHlA4AAAAA:gBqKwMDIBFGGpEf5kmdfQinJ_f-7eEwpHNyn3TR0AceXi7SbEc2d0neR294ofYEXdSU0boJKulA" target="_blank">IEEE EMBC 2022</a></highlight>] 
+            [<highlight><a href="https://www.attentivmedical.com/" target="_blank">website</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#fraxure">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Femur fracture treatment device for low-resource settings.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/fraxure.jpg" alt="">
+          </div>
+          <div class="portfolio-label">FraXure: Femur Fracture Traction Device</div>
+          <div class="text-center"> 
+            [<highlight><a href="documents/FraXureReport.pdf" target="_blank">project report</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#haptic">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Haptic-based "touch" feedback for upper limb prosthetic users.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/h4ptic.png" alt="">
+          </div>
+          <div class="portfolio-label">H4ptic: Sensory Feedback Wearable</div>
+          <div class="text-center">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#certec">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Hand spasticity rehabilitation wearable to increase interactivity.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/certec.JPG" alt="">
+          </div>
+          <div class="portfolio-label">Interactive Stroke Rehabilitation Wearable</div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#recrutch">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Crutches designed for optimal ergonomics.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/recrutch.png" alt="">
+          </div>
+          <div class="portfolio-label">ReCrutch: Reimagined Crutches</div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#emr">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Investigating international attitudes towards electronic medical record systems.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/emr.png" alt="">
+          </div>
+          <div class="portfolio-label">Perception of Electronic Medical Records</div>
+        </div>
+      
+      </div>
+
+      <h4 class="mt-6">▶ <highlight>Mixed Reality</highlight></h4>
+      <div class="row mb-6">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#amplify">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Discretizing and amplifying happiness in animated faces (see <a href="https://zxnnic.github.io/amplifying-emotion/" target="_blank"><u>project page</u></a>).</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/amplify.jpg" alt="">
+          </div>
+          <div class="portfolio-label">Make it Happier!</div>
+          <div class="text-center"> 
+            [<highlight><a href="https://zxnnic.github.io/amplifying-emotion/" target="_blank">project page</a></highlight>] 
+            [<highlight><a href="https://github.com/zxnnic/amplifying-emotion/tree/main" target="_blank">code</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#hololabel">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Semantic annotation of 3D scenes with the HoloLens.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/hololabel.png" alt="">
+          </div>
+          <div class="portfolio-label">HoloLabel: AR Scene Annotator</div>
+          <div class="text-center"> 
+            [<highlight><a href="documents/HoloLabel_EC3_2022.pdf" target="_blank">EC3 2022</a></highlight>]
+            [<highlight><a href="https://gitlab.ethz.ch/dagrawal/mixed-reality-ar-scene-annotation-project" target="_blank">code</a></highlight>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#forest">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>An audio- and visual-immersive escape game set in a mysterious forest.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/into_the_forest.png" alt="">
+          </div>
+          <div class="portfolio-label">Into the Forest: Immersive Game</div>
+          <div class="text-center"> 
+            <a href="intotheforest.html" target="_blank">
+              [<highlight>game demo</highlight>]
+            </a>
+            [<a href="https://github.com/jessica-bo/intotheforest" target="_blank"><highlight>code</highlight></a>]
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#myohome">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center">
+                <p>Gesture-controlled "smart home" prototype.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/myohome.png" alt="">
+          </div>
+          <div class="portfolio-label">MyoHome: Gesture-Controlled Smarthome</div>
+          <div class="text-center"> 
+          </div>
+        </div>
+
+      </div> -->
 
       <!-- <h4 class="mt-6">▶<highlight> Survey Studies </highlight></h4>
 
@@ -549,12 +823,12 @@
                 <h6 class="large font-weight-bold"><highlight>Abstract: </highlight></h6>
                 <p class="mb-3">Medical datasets often face the problem of data scarcity, as ground truth labels must be generated by medical professionals. One mitigation strategy is to pretrain deep learning models on large, unlabelled datasets with self-supervised learning (SSL), but this introduces the issue of domain shift if the pretraining and task dataset distributions differ. Data augmentations are essential for improving the generalizability of SSL-pretrained models, but they tend to be either handcrafted or randomly applied. We use an adversarial model to generate masks as augmentations for 12-lead electrocardiogram (ECG) data, where masks learn to occlude diagnostically-relevant regions. Compared to random augmentations, models pretrained with adversarial masking reaches better accuracy under a domain shift condition and in data-scarce regimes on two diverse downstream tasks, arrhythmia classification and patient age estimation. Adversarial masking is competitive with and even reaches further improvements when combined with state-of-art ECG augmentation methods, 3KG and random lead masking (RLM), demonstrating the generalizability of our method.</p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Proposed original research project to improve deep learning model generalizability in medical domains</li>
                   <li>Implemented deep learning training framework with PyTorch Lightning</li>
                 </ul>
-
+ -->
                 <h6 class="large font-weight-bold"><highlight>Awards: </highlight></h6>
                 <ul>
                   <li>IEEE Computational Intelligence Society Graduate Research Grant</li>
@@ -599,7 +873,7 @@
 
                 <p>As a further step, we explore if APL can be applied to address technical challenges in RL, such as sample efficiency in training. We initialize agents with pretrained depth visual encoders and repeat their training to compare with the scratch agents. We find that some embodied tasks which require visual information saw benefits in the jumpstart reward performance, but definitive results are limited by agents overfitting to the training environments. We make a list of recommended changes to the technical setup of the experiments and suggest future directions.</p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Developed research plan to investigate how reinforcement learning tasks affect perceptual abilities</li>
                   <li>Created transfer learning framework with PyTorch</li>
@@ -609,7 +883,7 @@
                 <ul>
                   <li>Onur B. (EPFL)</li>
                   <li>Louis A. (EPFL)</li>
-                </ul>
+                </ul> -->
 
               </div>
             </div>
@@ -639,7 +913,7 @@
                 <p>Meshes generated by the Microsoft HoloLens and other similar recording devices register on different coordinate systems with each subsequent scan. As a result, it is a nontrivial problem to accurately, efficiently, and robustly align these meshes. Applications for mesh registration include Virtual Reality (VR) and Augmented Reality (AR), in which the stitching together of distinct meshes is required to match features taken at different points in time. </p>
                 <p class="mb-3">Our main objective is to implement a mesh registration pipeline based on the Guaranteed Outlier Removal (GORE) algorithm, developed by Bustos and Chin.We seek to refine GORE with the Iterative Closest Points (ICP) and RANSAC algorithms, and compare the performance of the GORE pre-processing step in relation to the subsequent registration algorithms.</p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Evaluated the existing GORE point cloud registration algorithm on a new HoloLens room dataset</li>
                   <li>Augmented the algorithm to improve registration errors</li>
@@ -649,7 +923,7 @@
                 <ul>
                   <li>Karen H. (UBC Computer Science)</li>
                   <li>Kevin S. (MIT Computer Science)</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -677,7 +951,7 @@
                 <h6 class="large font-weight-bold"><highlight>Motivation: </highlight></h6>
                 <p class="mb-3">LiDAR (light detecting and ranging) devices are commonly used sensors in the automotive market, especially for the development of autonomous vehicles and ADAS (advanced driver-assistance systems). They are reliable for detecting distances of objects in the 3D world, which is useful for computing the location of obstacles and “free space” on the road. Using the speed of light as a reference, LiDARs emit a laser beam and measure the amount of time it takes to receive a return signal, which enables the sensor to perform highly accurate distance calculations. For the purposes of the QNX Advanced Development team, I investigated the usage of LiDAR data for real-time obstacle and free space detection.</p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Developed perception algorithms for obstacle and free space detection withLiDARs on the QNX sensor framework</li>
                   <li>Created visualizations from fused camera and LiDAR data streams for demonstration at CES 2019</li>
@@ -686,7 +960,7 @@
                 <h6 class="large font-weight-bold"><highlight>Collaborators: </highlight></h6>
                 <ul>
                   <li>Gordon Bell (QNX Founder & Researcher)</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -718,7 +992,7 @@
                 <p>The Attentiv catheter and infiltration monitoring system offers accurate and immediate detection of IV infiltration through its root cause, catheter dislodgement. Our sensor-embedded IV catheter provides real-time localization of the catheter tip and alerts the caretaker team if infiltration occurs. The monitoring system is seamlessly integrated into the existing nursing workflow and IV equipment. For hospitals, we reduce their economic expenditure and elevate their standards of care by preventing severe infiltration injuries.</p>
                 <p class="mb-3">Existing devices that aim to address the issue of IV infiltration use non-direct methods for detection . These devices are generally in the form of an external stick-on patch which requires additional dressings to secure and extra wiring, and is not ideal for premature babies with fragile skin. Our device is situated in-vivo and monitors the root cause of infiltration , allowing for quicker responses. Direct sensing allows us to expand into other types of catheters like central lines, where patch sensors cannot detect. Fewer dressings and reduction in protocol changes for nurses has the potential to lead to easier adoption and less costly retraining, which are both significant concerns in healthcare.</p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Led team through problem discovery and interviews with clinicians </li>
                   <li>Researched biomedical and regulatory standards for safety and compliance</li>
@@ -734,7 +1008,7 @@
                   <li>Gordon Y. (UBC Computer Engineering)</li>
                   <li>Jessica Y. (UBC Sauder School of Business)</li>
                   <li>Siddarth B. (UBC Sauder School of Business)</li>
-                </ul>
+                </ul> -->
 
                 <h6 class="large font-weight-bold"><highlight>Awards: </highlight></h6>
                 <ul>
@@ -784,7 +1058,7 @@
                 <p>Globally, about 6 million people die from strokes every year. Stroke survivors must undergo extensive physical rehabilitation exercises to recover their motor functions, some of which is done at home after hospital discharge. However, the effectiveness of the rehabilitation is often undermined by the repetitive and uninteresting nature of the exercises, leading to low motivation for the patients to continue the exercises in the long term. Nearly three quarters of stroke survivors report feeling a lack of confidence, and nearly half report a lack of motivation or anger. Over half of all stroke survivors are left with a disability, with a reported 85% suffering from loss of movement in upper limbs. This type of impairment negatively affects the patient’s ability to lead an independent life and perform daily tasks, lowering their quality of life. </p>
                 <p class="mb-3">There is a need to improve the effectiveness of at-home rehabilitation in order to cut back on acute care costs as well as to promote patient independence and decrease the reliance on caretakers. This can be done by combining intuitive ergonomic design with necessary rehabilitation exercises to create an interactive interface that patients will enjoy to use. We proposed and prototyped an interactive "glove" rehabilitation device for hand spasticity, a common outcome of stroke. Using Arduino, various sensors, and themoplastic, we constructed and clinically evaluated a functional prototype that provided real-time performance feedback through LEDs and allowed the patient to control a computer game through their therapy exercises.</p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Investigated interactivity as a method to increase patience compliance in long-term rehabilitation treatments </li>
                   <li>Prototyped a hand spasticity rehabilitation wearable device for stroke survivors</li>
@@ -795,7 +1069,7 @@
                 <ul>
                   <li>Jiaqi L. (UBC Mechanical Engineering)</li>
                   <li>Héctor Caltenco (former Assistant Professor at Lund University)</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -832,7 +1106,7 @@
                 <p>For femoral fractures, non-surgical treatment refers to traction, applied via the skin or the skeleton. Traction operates under the primary principle of applying two equal and opposite forces on two fragments of the fracture to achieve and maintain fracture position for healing. Skeletal traction is currently the standard of care for femoral shaft fractures in low and middle income countries (LIMCs). Skeletal traction is unfortunately associated with unwanted medical complications that can prolong treatment period and lowered quality of healing. In traction, insufficient reduction, slippage, or infections can cause malunions. Adverse effects of malunion include functional impairments to gait, limb shortening, and excessive stresses on other joints and body parts.</p>
                 <p> The goal of the project was to improve patient outcomes through the design of a cost effective, clinically viable device for the treatment of femur fractures. It was deemed critical that our device offers a non-surgical solution to help alleviate some of the demand for orthopaedic surgeons, whom are scarce in many LMICs as described previously. Without the need for surgical intervention, our hope is that the device will make femur fracture treatment more accessible and affordable for patients. As well, reducing the hospital stay for patients suffering from femur fractures may allow medical resources to be reallocated to the treatment of other injuries, furthe reducing the burden on the healthcare system. As well, mobilizing patients at earlier stages of recovery may present additional social and economic benefits as they can return to their families and return to the workforce earlier.</p>
                 <p class="mb-3">Through extensive literature research and in-country consulting with our hospital partners in Uganda and Kenya, we developed a pneumatic traction device that does not require external grounding to the hospital bed, allowing patients to return home with partial mobility. The cushioning system comprises of alternating pressurized airbags that distributes the contact force and reduces risk of deep tissue injuries.</p>
-
+<!-- 
                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Prototyped testing jigs and mechanical traction device design</li>
@@ -843,7 +1117,7 @@
                 <h6 class="large font-weight-bold"><highlight>Collaborators: </highlight></h6>
                 <ul>
                   <li>Members of FraXure from the UBC Biomedical Engineering Student Team </li>
-                </ul>
+                </ul> -->
 
                 <h6 class="large font-weight-bold"><highlight>Awards: </highlight></h6>
                 <ul>
@@ -879,7 +1153,7 @@
                 <h6 class="large font-weight-bold"><highlight>Motivation: </highlight></h6>
                 <p class="mb-3">There is limited usability in today's current prosthetic devices as they do not offer haptic sensory feedback. Modular EMG prosthetics are becoming increasingly common. Although the functionality of these prosthetics depends greatly on feedback to the user, this is an area where there has been limited development. To resolve this problem, we created H4ptic, a non-invasive device that captures haptic sensation from the prosthetic and transmits that sensation to the user’s body. H4ptic was designed using the principles of somatosensory cortex remapping, neuroplasticity, and sensory substitution. </p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Reviewed literature on somatosensory cortex remapping in application to sensory feedback for upper limb amputees</li>
                   <li>Produced project video and competition project pitch</li>
@@ -893,7 +1167,7 @@
                   <li>Allan N. (UBC Mechanical Engineering)</li>
                   <li>Justin W. (UBC Biomedical Engineering)</li>
                   <li>Madison M. (UBC Electrical Engineering)</li>
-                </ul>
+                </ul> -->
 
                 <h6 class="large font-weight-bold"><highlight>Awards: </highlight></h6>
                 <ul>
@@ -936,11 +1210,11 @@
                 <h6 class="large font-weight-bold"><highlight>Motivation: </highlight></h6>
                 <p class="mb-3">This project was inspired after I witnessed a friend on crutches struggling to navigate flights of stairs. The rigid, vertical design of traditional crutches exert high pressure at contact points (palms and underarms) for users, making it an uncomfortable device to use for prolonged durations. Additionally, the inflexibility of the crutch hinders natural gait when traversing stairs. In my redesign, the ReCrutch features a retractable duel-handle design that aids the user while both ascending and descending stairs, simply by reversing the holding direction. The flexible S-shaped body also acts as a shock absorber. The elbow cradle is an ergonomic feature that helps relieve underarm contact pressure.</p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Took inspiration from ergonomic principles to redesign the load-bearing mechanism of the crutch</li>
                   <li>Produced conceptual sketches and implemented design using Fusion 360 CAD</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -970,7 +1244,7 @@
                 <h6 class="large font-weight-bold"><highlight>Abstract: </highlight></h6>
                 <p class="mb-3">Centralized Electronic Medical Record systems (EMR) have potential to provide a variety of benefits to national healthcare systems worldwide. However, their implementation has proven to be challenging and raised several concerns. Although previous work has analyzed the successes and limitations of centralized EMR systems, statistical analysis to quantify user perspective has not yet been conducted. In order to gain a better understanding of the opinions of medical professionals and others in the field regarding their perceived support, benefits, and barriers for a centralized EMR system, a survey was conducted on the participants of the International Paediatrics Association (IPA) 2016 Conference in Vancouver, BC. The survey contained Likert Scale questions, asking participants to rate the importance of listed benefits and barriers, as well as indicate their overall support for centralized EMR systems on a scale of 1 to 5. The data was analyzed using a one-way ANOVA, with a focus on the countries with the greatest number of respondents (USA, Canada, Nigeria, and Mexico). The responses were also categorized and analyzed based on country development. The results indicated that Mexico, as well as other non-developed countries were shown to be most in favour of the EMR system. Fast record access and efficiency were rated as the most significant benefits of a centralized EMR system, while cost and implementation time were perceived as the largest barriers. Implementation time was also rated significantly higher as a barrier by developed countries than non-developed countries. These findings provide useful guidelines for consideration in the implementation of a centralized EMR system, and help in the drive towards improving national healthcare systems worldwide.</p>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Collected Likert survey responses from physicians at an international paediatrics conference</li>
                   <li>Analyzed statistical significance in attitudes towards EMR systems using R</li>
@@ -979,7 +1253,7 @@
                 <h6 class="large font-weight-bold"><highlight>Collaborators: </highlight></h6>
                 <ul>
                   <li>Members of the International Children's Advisory Network (authors listed in publication)</li>
-                </ul>
+                </ul> -->
 
               </div>
             </div>
@@ -1039,7 +1313,7 @@
                   </div>
                 </div>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Analyzed the reduction in energy expenditure in uphill backcountry ascent using the product</li>
                   <li>Generated and evaluated various design concepts using </li>
@@ -1052,7 +1326,7 @@
                   <li>Jordan F. (UBC Mechanical Engineering)</li>
                   <li>Martin F. (UBC Mechanical Engineering)</li>
                   <li>Cody S. (UBC Mechanical Engineering)</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -1097,7 +1371,7 @@
                   </div>
                 </div>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Conducted speed, agility, and drag tests to simulate the boat motion with MATLAB</li>
                   <li>Created aesthetic design as inspired by Squirtle, a water pokemon</li>
@@ -1116,7 +1390,7 @@
                 <ul>
                   <li>MECH 223 Competition - First Place Speed</li>
                   <li>MECH 223 Competition - Public Voted Best Design</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -1161,7 +1435,7 @@
                   </div>
                 </div>
 
-                <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Programmed Arduino code to control the activation of regenerative braking </li>
                   <li>Brainstormed dual-energy storage concept and calculated energy efficiency</li>
@@ -1174,7 +1448,7 @@
                   <li>Cristian M. (UBC Mechanical Engineering)</li>
                   <li>Duk L. (UBC Mechanical Engineering)</li>
                   <li>Karl E. (UBC Mechanical Engineering)</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -1218,7 +1492,7 @@
                     </div>
                   </div>
                 </div>
-
+<!-- 
                 <h6 class="large font-weight-bold"><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Created CAD models of components used for the structural team</li>
@@ -1228,7 +1502,7 @@
                 <h6 class="large font-weight-bold"><highlight>Collaborators: </highlight></h6>
                 <ul>
                   <li>Members of the UBC ORBIT team</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -1258,7 +1532,7 @@
                 <h6 class="large font-weight-bold "><highlight>Abstract: </highlight></h6>
                 <p> As the popularity of supervised and semi-supervised learning tasks in embodied perception rises, so does the demand for large-scale annotated 3D scene datasets. Devices equipped with RGB cameras and depth sensors being readily available simplifies the task of capturing and reconstructing an environment as a 3D mesh. However, the task of manually labelling this 3D data is still non-trivial. To obtain semantic information about the scene, experts often have to work for many hours using non-intuitive and error-prone tools. To address this problem, we propose a HoloLens application to allow a user to directly annotate the scene with semantic information while simultaneously capturing the spatial environment mesh. Our tool focuses on 3D mesh-based semantic segmentation, i.e. annotating areas of the scene using a predefined set of classes. We leverage the HoloLens' Spatial Mapping feature to generate a 3D mesh of the scene and apply an automatic segmentation algorithm to generate segmentation proposals. The user can use a virtual paint brush to refine the segments or create new ones. Finally, we allow the option to add richer semantic descriptions using voice-to-text technology. We aim to lay the groundwork to integrate mixed reality devices in enabling intuitive 3D scene annotation in the real world.
                 </p>
-
+<!-- 
                 <h6 class="large font-weight-bold "><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Developed augmented reality user interface with Mixed Reality Toolkit (MRTK) for HoloLens</li>
@@ -1271,7 +1545,7 @@
                   <li>Janik L. (ETH Zurich INFK)</li>
                   <li>Dhruv A. (ETH Zurich INFK)</li>
                   <li>Veronique K. (ETH Zurich INFK)</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -1311,7 +1585,7 @@
                 <p class="font-italic text-center">You wake up in the middle of a forest, no memories of how you got here. But somehow it feels like you’ve been floating through these woods for a long time now. With birdsongs in the background and the sun high, the forest feels alive. Something in the air seems off, however. A tinge of mystery. Well, nothing to do but to venture further. There must be someway home. But soon the bird calls cease, a wispy mist floats, around and into you. Dark clouds blot the sky. Thick clouds infect your mind. Something the air seems off. </p>
                 <p class="mb-3 font-italic text-center">The forest feels alive.</p>
 
-                <h6 class="large font-weight-bold "><highlight>Responsibilities: </highlight></h6>
+<!--                 <h6 class="large font-weight-bold "><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Brainstormed game storyboard and developed early moodboard and concept art</li>
                   <li>Created various low-poly nature assets with Blender</li>
@@ -1323,7 +1597,7 @@
                 <ul>
                   <li>Kevin T. (ETH Zurich Robotics)</li>
                   <li>Andyn O. (Empa)</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -1351,7 +1625,7 @@
 
                 <h6 class="large font-weight-bold "><highlight>Motivation: </highlight></h6>
                 <p class="mb-3">Modern smarthomes are typically voice-controlled, which presents a detriment to potential users with speech impairments or strong accents. We turned to the Myo Armband, an non-invasive EMG sensing device that comes with pre-built abilities to recognize simple hand gestures. Instead of speaking to Alexa or Google Home, users can control their smart home devices such as lights and fans at the flick of their wrist and arm. Based on how many devices there are, users can use the MyoHome web app to configure the gestures for each device, and save those customized gestures to a user profile. Although there are only 5 basic gestures built in to the Myo Connect app, there are essentially an infinite number of gestures that could be configured based on the raw data output from the accelerometer, EMG sensors, and gyroscope.</p>
-
+<!-- 
                 <h6 class="large font-weight-bold "><highlight>Responsibilities: </highlight></h6>
                 <ul>
                   <li>Brainstormed design and business motivation for a gesture controlled smarthome</li>
@@ -1364,7 +1638,7 @@
                   <li>Nicholas H. (UBC Mechanical Engineering)</li>
                   <li>Stephen L. (UBC Computer Science)</li>
                 </ul>
-
+ -->
                 <h6 class="large font-weight-bold"><highlight>Awards: </highlight></h6>
                 <ul>
                   <li>nwHacks 2018 Honourable Mention</li>

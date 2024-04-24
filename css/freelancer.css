@@ -9779,6 +9779,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .masthead .masthead-subheading {
   font-size: 1.25rem;
+  border-bottom: 3px solid var(--pink);
 }
 
 .masthead .masthead-avatar {
@@ -9830,8 +9831,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.2rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.15rem;
   padding: 1rem 1rem;
   color: var(--gray-dark);
 }
@@ -9845,12 +9846,13 @@ a.text-dark:hover, a.text-dark:focus {
 .portfolio-label {
   text-align: center;
   font-weight: bold;
-  font-size: 115%;
+  font-size: 105%;
 }
 
 .portfolio-skill {
   text-align: center;
   color: var(--gray);
+  font-size: 90%;
 }
 
 
