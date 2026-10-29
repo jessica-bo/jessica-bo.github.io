@@ -9957,6 +9957,102 @@ fulllight {
   background: var(--lightpink);
 }
 
+/* Updates list on index.html: show ~7 lines, scroll for older entries */
+.updates-list {
+  max-height: 10.5em;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--lightpink) transparent;
+}
+
+.updates-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.updates-list::-webkit-scrollbar-thumb {
+  background: var(--lightpink);
+  border-radius: 3px;
+}
+
+/* Publication list on research.html: thumbnail left, details right */
+.research {
+  padding-top: calc(4rem + 74px);
+}
+
+@media (min-width: 992px) {
+  .research {
+    padding-top: calc(4rem + 76px);
+  }
+}
+
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-thumb {
+  flex: 0 0 160px;
+}
+
+.pub-thumb img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-venue {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+}
+
+.pub-title {
+  font-weight: bold;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin: 0.3rem 0;
+}
+
+.pub-authors {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+.pub-summary {
+  font-size: 0.85rem;
+  margin: 0.4rem 0;
+}
+
+.pub-links {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 575.98px) {
+  .pub-item {
+    gap: 1rem;
+  }
+
+  .pub-thumb {
+    flex-basis: 96px;
+  }
+}
+
 
 body { padding: 0; margin: 0 }
 #unity-container { position: absolute }
